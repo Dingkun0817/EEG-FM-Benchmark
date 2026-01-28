@@ -24,7 +24,7 @@ Electroencephalography (EEG) foundation models have recently emerged as a promis
 
 ## 🔥Latest EEG-FM Papers
 ### 🔥2021
--  **BENDR**:[BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (2021, Front.Hum.Neuro.)
+- [BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (2021, Front.Hum.Neuro.)
 ### 🔥2022
 - [BRAINBERT: SELF-SUPERVISED REPRESENTATION LEARNING FOR INTRACRANIAL RECORDINGS](https://openreview.net/forum?id=xmcYx_reUn6) (2023, ICLR)
 ### 🔥2023
