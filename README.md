@@ -1,7 +1,7 @@
 # EEG-FM-Benchmark
 
 ## :speech_balloon: Annoucement
-- [2026.01.27] 🚩 **News**  The manuscript of MIRepNet can be found in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883).
+- [2026.01.27] 🚩 **News**  The manuscript of our benchmark can be found in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883).
 
 - [2026.01.25] We propose a **fair and comprehensive benchmarking for open source EEG foundation models**.
 
