@@ -16,10 +16,15 @@ Electroencephalography (EEG) foundation models have recently emerged as a promis
 - 🧩 We survey 50 BCI foundation models, constituting the most comprehensive collection to date.
 - 🛠️ We provide a detailed and structured comparison of their technical designs, encompassing basic information, pre-training data scale, preprocessing pipelines, pre-training strategies, and architectural choices.
 - 🎯 We propose a unified taxonomic framework for EEG foundation models that organizes existing work into a coherent design space.
-- 
+
 **Fair and comprehensive benchmarking for open source EEG foundation models.**
 - 🧩 We systematically compare "full parameter fine-tuning" with "classification head fine-tuning" across various models and tasks to assess whether pre-trained encoders provide broadly transferable EEG representations. Beyond the commonly used leave one subject out (LOSO) scenario, we introduce a within-subject few-shot adaptation scenario in which the fine-tuning data volume is approximately 1/20 ~ 1/100 of that typically used in LOSO protocols.
 - 🛠️ We comprehensively compare traditional machine learning methods, CNN-based models, and Transformer-based models trained from scratch against fine-tuned EEG foundation models to evaluate whether conventional approaches remain competitive.
 - 🎯 We evaluate EEG foundation models of varying parameter sizes pre-trained on diverse datasets to investigate whether a larger model necessarily leads to better generalization performance.
+
+## 🔥Latest EEG-FM Papers
+### 🔥2021
+- Jun 21 [BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (Front.Hum.Neuro.)
+
 
 
