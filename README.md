@@ -23,28 +23,8 @@ Electroencephalography (EEG) foundation models have recently emerged as a promis
 - 🎯 We evaluate EEG foundation models of varying parameter sizes pre-trained on diverse datasets to investigate whether a larger model necessarily leads to better generalization performance.
 
 ## 🔥Latest EEG-FM Papers
-### 🔥2021
-- [BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (2021, Front.Hum.Neuro.)
-### 🔥2022
-- [BRAINBERT: SELF-SUPERVISED REPRESENTATION LEARNING FOR INTRACRANIAL RECORDINGS](https://openreview.net/forum?id=xmcYx_reUn6) (2023, ICLR)
-### 🔥2023
-- [MBrain: A Multi-channel Self-Supervised Learning Framework for Brain Signals](https://dl.acm.org/doi/abs/10.1145/3580305.3599426) (2023, KDD)
-- [BIOT: Biosignal Transformer for Cross-data Learning in the Wild](https://proceedings.neurips.cc/paper_files/paper/2023/hash/f6b30f3e2dd9cb53bbf2024402d02295-Abstract-Conference.html) (2023, NeurIPS)
-- [Brant: Foundation Model for Intracranial Neural Signal](https://proceedings.neurips.cc/paper_files/paper/2023/hash/535915d26859036410b0533804cee788-Abstract-Conference.html) (2023, NeurIPS)
-- [Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI](https://openreview.net/forum?id=QzTpTRVtrP) (2024, ICLR)
-- [MENTALITY: A MAMBA-BASED APPROACH TOWARDS FOUNDATION MODELS FOR EEG](https://openreview.net/forum?id=O6T38rRiFp) (2024, ICLR Workshop)
-- [NEURO-GPT: TOWARDSAFOUNDATIONMODELFOREEG](https://ieeexplore.ieee.org/abstract/document/10635453) (2024, ISBI)
-- [MEET: A Multi-Band EEG Transformer for Brain States Decoding](https://ieeexplore.ieee.org/abstract/document/10345766) (2024, TBME)
-### 🔥2024
-- [EEGFormer: Towards Transferable and Interpretable Large-Scale EEG Foundation Model](https://openreview.net/forum?id=MXRy6bYBfB) (2024, AAAI SSS)
-- [BrainWave: A Brain Signal Foundation Model for Clinical Applications](https://arxiv.org/abs/2402.10251) (Feb, 2024)
-- [NEUROLM: AUNIVERSAL MULTI-TASK FOUNDATION MODEL FOR BRIDGING THE GAP BETWEEN LANGUAGE AND EEG SIGNALS](https://openreview.net/forum?id=Io9yFt7XH7) (2025, ICLR)
-- [Brant-X:AUnifiedPhysiological Signal Alignment Framework](https://dl.acm.org/doi/abs/10.1145/3637528.3671953) (2024, KDD)
-- [FoME: A Foundation Model for EEG using Adaptive Temporal-Lateral Attention Scaling](https://arxiv.org/abs/2409.12454) (Sep, 2024)
-- [EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4540d267eeec4e5dbd9dae9448f0b739-Abstract-Conference.html) (2024, NeurIPS)
-- [BrainGPT: Unleashing the Potential of EEG Generalist Foundation Model by Autoregressive Pre-training](https://arxiv.org/abs/2510.16658) (Oct, 2024)
-- [GEFM: Graph-Enhanced EEG Foundation Model](https://ieeexplore.ieee.org/abstract/document/11254706) (2025, EMBC)
-- [CBRAMOD: A CRISS-CROSS BRAIN FOUNDATION MODEL FOR EEG DECODING](https://openreview.net/forum?id=NPNUHgHF2w) (2025, ICLR)
+### 🔥2026
+- [DeeperBrain: A Neuro-Grounded EEG Foundation Model Towards Universal BCI](https://arxiv.org/abs/2601.06134) (Jan, 2026)
 ### 🔥2025
 - [CEReBrO: Compact Encoder for Representations of Brain Oscillations Using Efficient Alternating Attention](https://arxiv.org/abs/2501.10885) (Jan, 2025)
 - [LEAD: LARGE FOUNDATION MODEL FOR EEG-BASEDALZHEIMER’S DISEASE DETECTION](https://arxiv.org/abs/2502.01678) (Feb, 2025)
@@ -77,8 +57,29 @@ Electroencephalography (EEG) foundation models have recently emerged as a promis
 - [THD-BAR: Topology Hierarchical Derived Brain Autoregressive Modeling for EEG Generic Representations](https://arxiv.org/abs/2511.13733) (2025, NeurIPS)
 - [EEG-X: DEVICE-AGNOSTIC ANDNOISE-ROBUST FOUNDATION MODEL FOR EEG](https://arxiv.org/abs/2511.08861) (Nov, 2025)
 - [SAMBA: TOWARD A LONG-CONTEXT EEG FOUNDATION MODEL VIA SPATIAL EMBEDDING AND DIFFERENTIAL MAMBA](https://arxiv.org/abs/2511.18571) (Nov, 2025)
-### 🔥2026
-- [DeeperBrain: A Neuro-Grounded EEG Foundation Model Towards Universal BCI](https://arxiv.org/abs/2601.06134) (Jan, 2026)
+### 🔥2024
+- [EEGFormer: Towards Transferable and Interpretable Large-Scale EEG Foundation Model](https://openreview.net/forum?id=MXRy6bYBfB) (2024, AAAI SSS)
+- [BrainWave: A Brain Signal Foundation Model for Clinical Applications](https://arxiv.org/abs/2402.10251) (Feb, 2024)
+- [NEUROLM: AUNIVERSAL MULTI-TASK FOUNDATION MODEL FOR BRIDGING THE GAP BETWEEN LANGUAGE AND EEG SIGNALS](https://openreview.net/forum?id=Io9yFt7XH7) (2025, ICLR)
+- [Brant-X:AUnifiedPhysiological Signal Alignment Framework](https://dl.acm.org/doi/abs/10.1145/3637528.3671953) (2024, KDD)
+- [FoME: A Foundation Model for EEG using Adaptive Temporal-Lateral Attention Scaling](https://arxiv.org/abs/2409.12454) (Sep, 2024)
+- [EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4540d267eeec4e5dbd9dae9448f0b739-Abstract-Conference.html) (2024, NeurIPS)
+- [BrainGPT: Unleashing the Potential of EEG Generalist Foundation Model by Autoregressive Pre-training](https://arxiv.org/abs/2510.16658) (Oct, 2024)
+- [GEFM: Graph-Enhanced EEG Foundation Model](https://ieeexplore.ieee.org/abstract/document/11254706) (2025, EMBC)
+- [CBRAMOD: A CRISS-CROSS BRAIN FOUNDATION MODEL FOR EEG DECODING](https://openreview.net/forum?id=NPNUHgHF2w) (2025, ICLR)
+### 🔥2023
+- [MBrain: A Multi-channel Self-Supervised Learning Framework for Brain Signals](https://dl.acm.org/doi/abs/10.1145/3580305.3599426) (2023, KDD)
+- [BIOT: Biosignal Transformer for Cross-data Learning in the Wild](https://proceedings.neurips.cc/paper_files/paper/2023/hash/f6b30f3e2dd9cb53bbf2024402d02295-Abstract-Conference.html) (2023, NeurIPS)
+- [Brant: Foundation Model for Intracranial Neural Signal](https://proceedings.neurips.cc/paper_files/paper/2023/hash/535915d26859036410b0533804cee788-Abstract-Conference.html) (2023, NeurIPS)
+- [Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI](https://openreview.net/forum?id=QzTpTRVtrP) (2024, ICLR)
+- [MENTALITY: A MAMBA-BASED APPROACH TOWARDS FOUNDATION MODELS FOR EEG](https://openreview.net/forum?id=O6T38rRiFp) (2024, ICLR Workshop)
+- [NEURO-GPT: TOWARDSAFOUNDATIONMODELFOREEG](https://ieeexplore.ieee.org/abstract/document/10635453) (2024, ISBI)
+- [MEET: A Multi-Band EEG Transformer for Brain States Decoding](https://ieeexplore.ieee.org/abstract/document/10345766) (2024, TBME)
+### 🔥2022
+- [BRAINBERT: SELF-SUPERVISED REPRESENTATION LEARNING FOR INTRACRANIAL RECORDINGS](https://openreview.net/forum?id=xmcYx_reUn6) (2023, ICLR)
+### 🔥2021
+- [BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (2021, Front.Hum.Neuro.)
+
 
 
 
