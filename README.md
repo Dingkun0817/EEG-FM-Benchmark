@@ -1,4 +1,9 @@
-# EEG-FM-Benchmark
+# **🧮EEG-FM-Benchmark**
+![forks](https://img.shields.io/github/forks/Dingkun0817/EEG-FM-Benchmark?style=flat&color=orange)
+![stars](https://img.shields.io/github/stars/Dingkun0817/EEG-FM-Benchmark?style=flat&color=red)
+[![arXiv/huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E)](https://huggingface.co/papers/2601.17883)
+![license](https://img.shields.io/github/license/Dingkun0817/EEG-FM-Benchmark)
+
 
 ## :speech_balloon: Annoucement
 - [2026.01.27] 🚩 **News**  The manuscript of our benchmark can be found in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883).
