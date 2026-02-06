@@ -88,7 +88,7 @@ Electroencephalography (EEG) foundation models have recently emerged as a promis
 - [BENDR: Using Transformers and a Contrastive Self-Supervised Learning Task to Learn From Massive Amounts of EEG Data](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2021.653659/full) (2021, Front.Hum.Neuro.)
 
 ## 📩 Contact
-For any questions or collaborations, please feel free to reach out via `liudingkun@hust.edu.cn` or open an issue in this repository.
+For any questions, suggestions or collaborations, please feel free to reach out via `liudingkun@hust.edu.cn` or open an issue in this repository.
 
 ## Citation
 If you find our repo useful for your research, please cite us:
