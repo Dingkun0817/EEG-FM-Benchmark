@@ -6,7 +6,9 @@
 
 
 ## :speech_balloon: Annoucement
-- [2026.01.27] 🚩 **News**  The manuscript of our benchmark can be found in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883).
+- [2026.02.05] 🚩 **News:** The manuscript of our benchmark-v2 has been updated in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883). We have added: (1) evaluation of BIOT-1D and BIOT-2D across all scenarios, and (2) experiments with varying fine-tuning data ratios for all models on more datasets.
+
+- [2026.01.27] 🚩 **News:**  The manuscript of our benchmark can be found in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883).
 
 - [2026.01.25] We proposed **fair and comprehensive benchmarking for open source EEG foundation models**.
 
