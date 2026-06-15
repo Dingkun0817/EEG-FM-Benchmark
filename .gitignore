@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test / lint / type caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Experiment outputs and logs
+outputs/
+logs/
+runs/
+wandb/
+
+# Dataset artifacts (raw and preprocessed)
+datasets/data/
+
+# EEG / scientific data files
+*.pkl
+*.pickle
+!models/**/custom_montages/*.pkl
+*.edf
+*.mat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.csv
+*.tsv
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key

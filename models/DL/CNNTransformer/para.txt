@@ -1,0 +1,8 @@
+001
+fft=250,
+steps=25,
+dropout=dropout_rate,
+nhead=2,
+emb_size=256,
+n_segments=2,
+num_layers=2,

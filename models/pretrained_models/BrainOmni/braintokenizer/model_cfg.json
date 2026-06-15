@@ -1,0 +1,20 @@
+{
+    "window_length": 512,
+    "n_filters": 32,
+    "ratios": [
+        8,
+        4,
+        2
+    ],
+    "kernel_size": 5,
+    "last_kernel_size": 5,
+    "n_dim": 256,
+    "n_neuro": 16,
+    "n_head": 4,
+    "dropout": 0.0,
+    "codebook_dim": 256,
+    "codebook_size": 512,
+    "num_quantizers": 4,
+    "rotation_trick": true,
+    "quantize_optimize_method": "ema"
+}
