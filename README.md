@@ -31,7 +31,7 @@ Electroencephalography (EEG) foundation models (FMs) have recently emerged as a 
 
 ## **🧮Benchmarking**
 We established a benchmark that evaluates 12 open source EEG foundation models alongside competitive specialist baselines across 13 datasets spanning 9 representative BCI paradigms, under both cross-subject LOSO and within-subject few-shot evaluation protocols.
-![Benchmarking](rank.png)
+![Benchmarking](./assets/rank.png)
 
 ## 🔥Latest EEG-FM Papers
 ### 🔥2026
