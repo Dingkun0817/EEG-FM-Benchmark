@@ -36,16 +36,20 @@ We established a benchmark that evaluates 12 open source EEG foundation models a
 ## 🔥Latest EEG-FM Papers
 ### 🔥2026
 - [DeeperBrain: A Neuro-Grounded EEG Foundation Model Towards Universal BCI](https://arxiv.org/abs/2601.06134) (Jan, 2026)
+- [EEGMoE: A Domain-Decoupled Mixture-of-Experts Model for Self-Supervised EEG Representation Learning](https://ieeexplore.ieee.org/abstract/document/11357859) (2026, TNNLS)
+- [Brain-OF: An Omnifunctional Foundation Model for fMRI, EEG and MEG](https://arxiv.org/abs/2602.23410) (Feb, 2026)
 ### 🔥2025
 - [CEReBrO: Compact Encoder for Representations of Brain Oscillations Using Efficient Alternating Attention](https://arxiv.org/abs/2501.10885) (Jan, 2025)
 - [LEAD: LARGE FOUNDATION MODEL FOR EEG-BASEDALZHEIMER’S DISEASE DETECTION](https://arxiv.org/abs/2502.01678) (Feb, 2025)
 - [Enhancing EEG Analysis with AI:Developing a Tailored Foundational Model for EEG Signal Classification](https://arxiv.org/abs/2502.06438) (Feb, 2025)
 - [Large Cognition Model: Towards Pretrained Electroencephalography (EEG) Foundation Model](https://arxiv.org/abs/2502.17464) (Feb, 2025)
 - [TOKENIZING SINGLE-CHANNEL EEG WITH TIME FREQUENCY MOTIF LEARNING](https://arxiv.org/abs/2502.16060) (2025, NeurIPS Workshop)
+- [Gram: A Large General EEG Model for Raw Data Classification and Restoration](https://ieeexplore.ieee.org/abstract/document/10890831/) (2025, ICASSP)
 - [ALFEE: Adaptive Large Foundation Model for EEGRepresentation](https://arxiv.org/abs/2505.06291) (May, 2025)
 - [BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals](https://arxiv.org/abs/2505.18185) (2025, NeurIPS)
 - [EEG Foundation Models for BCI Learn Diverse Features of Electrophysiology ](https://arxiv.org/abs/2506.01867) (Jun, 2025)
 - [CodeBrain: TOWARDS DECOUPLED INTERPRETABILITY AND MULTI-SCALE ARCHITECTURE FOR EEG FOUNDATION MODEL](https://arxiv.org/abs/2506.09110) (Jun, 2025)
+- [DIVER-0 : A Fully Channel Equivariant EEG Foundation Model](https://arxiv.org/abs/2507.14141) (Jun, 2025)
 - [UniMind: Unleashing the Power of LLMs for Unified Multi-Task Brain Decoding](https://arxiv.org/abs/2506.18962) (Jun, 2025)
 - [CSBrain: A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding](https://arxiv.org/abs/2506.23075) (2025, NeurIPS)
 - [DMAE-EEG: A Pretraining Framework for EEG Spatiotemporal Representation Learning](https://ieeexplore.ieee.org/abstract/document/11062976) (2025, TNNLS)
@@ -62,6 +66,7 @@ We established a benchmark that evaluates 12 open source EEG foundation models a
 - [Neural Codecs as Biosignal Tokenizers](https://arxiv.org/abs/2510.09095) (Oct, 2025)
 - [HEAR: AN EEG FOUNDATION MODEL WITH HETEROGENEOUS ELECTRODE ADAPTIVE REPRESENTATION](https://arxiv.org/abs/2510.12515) (Oct, 2025)
 - [NEURORVQ: MULTI-SCALE EEG TOKENIZATION FOR GENERATIVE LARGE BRAIN WAVE MODELS](https://arxiv.org/abs/2510.13068) (Oct, 2025)
+- [NeurIPT: Foundation Model for Neural Interfaces](https://proceedings.neurips.cc/paper_files/paper/2025/hash/dd9c5ce8803e1898d438e636fbae0236-Abstract-Conference.html) (2025, NeurIPS)
 - [REVE: AFoundation Model for EEG Adapting to Any Setup with Large-Scale Pretraining on 25,000 Subjects](https://arxiv.org/abs/2510.21585) (2025, NeurIPS)
 - [Multi-dataset Joint Pre-training of Emotional EEG Enables Generalizable Affective Computing](https://arxiv.org/abs/2510.22197) (Oct, 2025)
 - [LUNA:Efficient and Topology-Agnostic Foundation Model for EEG Signal Analysis](https://arxiv.org/abs/2510.22257) (Oct, 2025)
