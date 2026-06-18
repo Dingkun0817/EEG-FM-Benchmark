@@ -265,7 +265,7 @@ Run `python run_finetuning.py --help` for all options (optimizer, LR scheduler, 
 
 ## 🔍 Models and Checkpoints
 
-### Summary
+### Summary:
 
 - **ML (traditional)**: CSP_LDA, Xdawn_LDA, PSD_Ridge, DE_LDA, TRCA, PSD_LDA, PSD_SVM. These use a separate training/evaluation path and do not require GPU.
 - **DL**: EEGNet, ShallowConv, CNNTransformer, Deformer, Conformer, LMDA, FBCNet, MSCFormer, TSception.
