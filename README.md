@@ -59,7 +59,7 @@ For GPU support, install PyTorch with the appropriate CUDA build from [pytorch.o
 Run all commands from the repository root (directory that contains `run_finetuning.py`). Logs and metrics go under `./outputs/logs/`.
 
 
-**LOSO with DL baseline (EEGNet on BNCI2014001)**
+**LOSO for DL baseline (EEGNet on BNCI2014001)**
 
 ```bash
 python run_finetuning.py \
@@ -82,7 +82,7 @@ python run_finetuning.py \
   --norm_method car
 ```
 
-**Few-shot with foundation model, full fine-tuning (CBraMod on BNCI2014001)**
+**Few-shot for foundation model, full fine-tuning (CBraMod on BNCI2014001)**
 
 ```bash
 python run_finetuning.py \
@@ -112,7 +112,7 @@ python run_finetuning.py \
   --time_length 4.0
 ```
 
-**Few-shot with foundation model, head only — backbone frozen (CBraMod on BNCI2014001)**
+**Few-shot for foundation model, linear probing (CBraMod on BNCI2014001)**
 
 ```bash
 python run_finetuning.py \
