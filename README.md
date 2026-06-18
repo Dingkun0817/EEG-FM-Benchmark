@@ -117,7 +117,7 @@ For GPU support, install PyTorch with the appropriate CUDA build from [pytorch.o
 
 </details>
 
-## Quick start
+## 📈 Quick start
 
 Run all commands from the repository root (directory that contains `run_finetuning.py`). Logs and metrics go under `./outputs/logs/`.
 
@@ -217,7 +217,7 @@ python run_finetuning.py \
   --seeds 0 1 2
 ```
 
-### Hyperparameters
+### 🌐 Hyperparameters
 
 The commands above are **reference runs** for specific dataset–model pairs (e.g. CBraMod and EEGNet on BNCI2014001). They are not meant as defaults for every experiment.
 
@@ -227,7 +227,7 @@ We encourage you to explore different hyperparameter settings rather than relyin
 
 See `python run_finetuning.py --help` for the full flag list. 
 
-## Datasets
+## 📥Datasets
 
 Data is read from `datasets/data/<DatasetName>.pkl`. If a pkl file is missing, the corresponding dataset module (e.g. `datasets/BNCI2014001/Preprocess_Dataset.py`) is used to download or generate it. Supported datasets include:
 
@@ -247,14 +247,6 @@ Data is read from `datasets/data/<DatasetName>.pkl`. If a pkl file is missing, t
 | ThingsEEG2    | Visual decoding  | <https://things-initiative.org/> |
 | EEGMAT        | Workload         | <https://physionet.org/content/eegmat/1.0.0/> |
 
-## Models
-
-- **ML (traditional)**: CSP_LDA, Xdawn_LDA, PSD_Ridge, DE_LDA, TRCA, PSD_LDA, PSD_SVM. These use a separate training/evaluation path and do not require GPU.
-- **DL**: EEGNet, ShallowConv, CNNTransformer, Deformer, Conformer, LMDA, FBCNet, MSCFormer, TSception.
-- **FM**: LaBraM, BENDR, NeuroGPT, BrainOmni_Tiny, BrainOmni_Base, LUNA_Base, LUNA_Huge, LUNA_Large, EEGMamba, SingLEM, TFMTokenizer, CBraMod, EEGPT, BIOT_6D, BIOT_1D, BIOT_2D.
-
-Use `--model_name` with one of the names above (see `models/config.py` for the full mapping).
-
 ## Main arguments
 
 | Argument              | Description |
@@ -271,29 +263,15 @@ Use `--model_name` with one of the names above (see `models/config.py` for the f
 
 Run `python run_finetuning.py --help` for all options (optimizer, LR scheduler, preprocessing, etc.).
 
-## Output layout
+## 🔍 Models and Checkpoints
 
-- **Root**: `./outputs/logs/<dataset>/<model>/<task_mode>/<finetune_strategy>/<timestamp>/`.
-- **Per seed**: Subfolder named by best metric and seed (e.g. `0.85_seed_0`) containing:
-  - `results.json` – metrics and config.
-  - `training_log.txt` – training log.
-  - `results.txt` – human-readable summary and copy-paste command.
-- **Multi-seed**: CSV files in the same timestamp folder with hyperparameters and per-seed/per-subject metrics.
+### Summary
 
-## Project structure
-
-- `run_finetuning.py` – Entry point; CLI, dataset/model loading, split loops, training, and result aggregation.
-- `utils/` – Data loading (`EEGDataLoader`, `dataset_split`, `model_loader`), training loop (`trainer`), metrics, logger, preprocessing, optimizer helpers.
-- `models/` – Model and preprocessor implementations under `ML/`, `DL/`, and `FM/`; `config.py` maps model names to categories.
-- `datasets/` – Per-dataset preprocessing and pkl generation (e.g. `Preprocess_Dataset.py`, `tool.py`).
-- `outputs/` – All run outputs (logs and result files).
-
-Reference or legacy code directories are not part of the main pipeline.
-
-
-## Reference and citation
-
-Upstream open-source repositories for DL and FM models in this benchmark:
+- **ML (traditional)**: CSP_LDA, Xdawn_LDA, PSD_Ridge, DE_LDA, TRCA, PSD_LDA, PSD_SVM. These use a separate training/evaluation path and do not require GPU.
+- **DL**: EEGNet, ShallowConv, CNNTransformer, Deformer, Conformer, LMDA, FBCNet, MSCFormer, TSception.
+- **FM**: LaBraM, BENDR, NeuroGPT, BrainOmni_Tiny, BrainOmni_Base, LUNA_Base, LUNA_Huge, LUNA_Large, EEGMamba, SingLEM, TFMTokenizer, CBraMod, EEGPT, BIOT_6D, BIOT_1D, BIOT_2D.
+  
+### Upstream open-source repositories for DL and FM models in this benchmark:
 
 | Model | GitHub |
 |-------|--------|
