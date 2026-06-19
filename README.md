@@ -177,10 +177,10 @@ Data is read from `datasets/data/<DatasetName>.pkl`. If a pkl file is missing, t
 | BNCI2014009   | P300             | MOABB |
 | CHB_MIT       | Clinic           | <https://physionet.org/content/chbmit/1.0.0/> |
 | TUAB          | Clinic           | <https://isip.piconepress.com/projects/nedc/html/tuh_eeg/> |
-| SleepEDF      | Sleep            | <https://physionet.org/content/sleep-edfx/1.0.0/> |
+| Sleep-EDFx      | Sleep            | <https://physionet.org/content/sleep-edfx/1.0.0/> |
 | SEED          | Emotion          | <https://bcmi.sjtu.edu.cn/home/seed/downloads.html> |
-| SEED_VIG      | Fatigue          | <https://bcmi.sjtu.edu.cn/home/seed/seed-vig.html> |
-| Dial          | SSVEP            | MOABB |
+| SEED-VIG      | Fatigue          | <https://bcmi.sjtu.edu.cn/home/seed/seed-vig.html> |
+| Nakanishi2015    | SSVEP            | MOABB |
 | ThingsEEG2    | Visual decoding  | <https://things-initiative.org/> |
 | EEGMAT        | Workload         | <https://physionet.org/content/eegmat/1.0.0/> |
 
