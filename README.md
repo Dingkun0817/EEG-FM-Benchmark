@@ -175,7 +175,7 @@ Data is read from `datasets/data/<DatasetName>.pkl`. If a pkl file is missing, t
 | BNCI2015001   | MI               | MOABB |
 | BNCI2014008   | P300             | MOABB |
 | BNCI2014009   | P300             | MOABB |
-| CHB_MIT       | Clinic           | <https://physionet.org/content/chbmit/1.0.0/> |
+| CHB-MIT       | Clinic           | <https://physionet.org/content/chbmit/1.0.0/> |
 | TUAB          | Clinic           | <https://isip.piconepress.com/projects/nedc/html/tuh_eeg/> |
 | Sleep-EDFx      | Sleep            | <https://physionet.org/content/sleep-edfx/1.0.0/> |
 | SEED          | Emotion          | <https://bcmi.sjtu.edu.cn/home/seed/downloads.html> |
@@ -208,7 +208,7 @@ Run `python run_finetuning.py --help` for all options (optimizer, LR scheduler, 
 - **DL**: EEGNet, ShallowConv, CNNTransformer, Deformer, Conformer, LMDA, FBCNet, MSCFormer, TSception.
 - **FM**: LaBraM, BENDR, NeuroGPT, BrainOmni_Tiny, BrainOmni_Base, LUNA_Base, LUNA_Huge, LUNA_Large, EEGMamba, SingLEM, TFMTokenizer, CBraMod, EEGPT, BIOT_6D, BIOT_1D, BIOT_2D.
   
-### Upstream open-source repositories for DL and FM models in this benchmark:
+### Open-source repositories for DL and FM models in this benchmark:
 
 | Model | GitHub |
 |-------|--------|
