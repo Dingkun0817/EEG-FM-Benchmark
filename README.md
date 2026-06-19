@@ -232,7 +232,8 @@ Run `python run_finetuning.py --help` for all options (optimizer, LR scheduler, 
 | TFMTokenizer | <https://github.com/Jathurshan0330/TFM-Tokenizer> |
 | CBraMod | <https://github.com/wjq-learning/CBraMod> |
 | EEGPT | <https://github.com/BINE022/EEGPT> |
-| BIOT_6D / BIOT_1D / BIOT_2D | <https://github.com/ycq091044/BIOT> |
+| BIOT-6D / BIOT-1D / BIOT-2D | <https://github.com/ycq091044/BIOT> |
+| MIRepNet | <https://github.com/staraink/MIRepNet> |
 
 ## 🔥Latest EEG-FM Papers
 ### 🔥2026
