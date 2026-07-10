@@ -21,7 +21,10 @@ MODEL_CATEGORY = {
     'NeuroGPT': 'FM',
     'BrainOmni': 'FM',
     'BrainOmni_B': 'FM',
+    'BrainOmni_Tiny': 'FM',
+    'BrainOmni_Base': 'FM',
     'LUNA': 'FM',
+    'LUNA_Base': 'FM',
     'LUNA_H': 'FM',
     'LUNA_L': 'FM',
     'EEGMamba': 'FM',
@@ -32,6 +35,9 @@ MODEL_CATEGORY = {
     'BIOT': 'FM',
     'BIOT_1': 'FM',
     'BIOT_2': 'FM',
+    'BIOT_6D': 'FM',
+    'BIOT_1D': 'FM',
+    'BIOT_2D': 'FM',
 }
 
 CATEGORY_NAMES = {

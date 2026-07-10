@@ -291,7 +291,7 @@ class LUNA(nn.Module):
         
         return x_tokenized, channel_locations_emb
 
-    def forward(self, x_signal, mask, channel_locations, channel_names=None):
+    def forward(self, x_signal, mask, channel_locations, channel_names=None, readout='pooling'):
         x_original = x_signal
         B, C, T = x_signal.shape
         if not isinstance(channel_locations, torch.Tensor):
@@ -313,8 +313,11 @@ class LUNA(nn.Module):
         x_latent = self.norm(x) # (B, N, D)
 
         if self.num_classes > 0:
-            x_classified = self.classifier(x_latent)
-            return x_classified
+            if readout not in ('flatten', 'pooling'):
+                raise ValueError("readout must be 'flatten' or 'pooling', got {!r}".format(readout))
+            if readout == 'pooling':
+                return self.classifier(x_latent)
+            return x_latent
         else:
             channel_emb = self.channel_emb(channel_names)
             channel_emb = channel_emb.repeat(num_patches, 1, 1)

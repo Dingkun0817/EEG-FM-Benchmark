@@ -69,9 +69,13 @@ class Loader_LUNA_Base(ModelLoader):
         finetune_strategy = kwargs.get('finetune_strategy', None)
         from_pretrain = kwargs.get('from_pretrain', True)
         dropout_rate = kwargs.get('dropout_rate', 0.1)
+        readout = kwargs.get('readout', 'pooling')
+        if readout not in ('flatten', 'pooling'):
+            raise ValueError("readout must be 'flatten' or 'pooling', got {!r}".format(readout))
         super().__init__(eeg_dataset, finetune_strategy)
 
         self.from_pretrain = from_pretrain
+        self.readout = readout
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.main_model = LUNA().to(self.device)
         locs = get_channel_locations(self.ch_names)
@@ -86,8 +90,11 @@ class Loader_LUNA_Base(ModelLoader):
                 torch.randn(1, self.num_channels, self.num_time_points, device=self.device)
             )
             mask = generate_fake_mask(1, self.num_channels, x_dummy.shape[2]).to(self.device)
-            out = self.main_model(x_dummy, mask, self.channel_locations)
-        self.feature_dim = out.shape[-1]
+            out = self.main_model(x_dummy, mask, self.channel_locations, readout=self.readout)
+        if self.readout == 'pooling':
+            self.feature_dim = out.shape[-1]
+        else:
+            self.feature_dim = int(out.numel() // out.shape[0])
 
         self.set_task_head(self.dataset_type, self.nb_classes, dropout_rate=dropout_rate)
         self.apply_finetune_strategy()
@@ -108,7 +115,7 @@ class Loader_LUNA_Base(ModelLoader):
             x = x.to(self.device)
         x = pad_time_to_patch(x)
         mask = generate_fake_mask(x.shape[0], x.shape[1], x.shape[2]).to(self.device)
-        output = self.main_model(x, mask, self.channel_locations)
+        output = self.main_model(x, mask, self.channel_locations, readout=self.readout)
         return self.task_head(output)
 
 
