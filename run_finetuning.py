@@ -42,12 +42,12 @@ def create_parser():
     parser = argparse.ArgumentParser(description='Run fine-tuning for EEG models')
     # Basic config: dataset and model
     parser.add_argument('--dataset', 
-                        default='CHB_MIT', 
+                        default='BNCI2014004', 
                         type=str, 
                         help='Dataset name: BNCI2014001 BNCI2014004 BNCI2015001 BNCI2014008 BNCI2014009 CHB_MIT TUAB SleepEDF SEED SEED_VIG Dial ThingsEEG2 EEGMAT')
     
     parser.add_argument('--model_name', 
-                        default='BIOT_6D', 
+                        default='CBraMod', 
                         type=str, 
                         help='Model name: ' + ' '.join(MODEL_CATEGORY.keys()))
     # Random seed and GPU
@@ -58,7 +58,7 @@ def create_parser():
                         help='Random seeds for reproducibility')
     
     parser.add_argument('--gpuid', 
-                        default=7, 
+                        default=0, 
                         type=int, 
                         help='GPU device ID to use for training')
     # Task mode
@@ -80,7 +80,7 @@ def create_parser():
                         help='Fine-tuning strategy: full (all parameters trainable) or head_only (only task head trainable)')
     # Training
     parser.add_argument('--batch_size', 
-                        default=256, 
+                        default=16, 
                         type=int, 
                         help='Batch size for training and evaluation')
     
@@ -127,12 +127,12 @@ def create_parser():
                         help='Optimizer type (e.g., adamw)')
     
     parser.add_argument('--lr', 
-                        default=1e-2, 
+                        default=0.001, 
                         type=float, 
                         help='Learning rate')
 
     parser.add_argument('--weight_decay', 
-                        default=0.1, 
+                        default=0.01, 
                         type=float, 
                         help='Weight decay for optimizer')
     
@@ -159,7 +159,7 @@ def create_parser():
                         help='Layer decay value for hierarchical learning rate scaling (1.0 means no decay)')
     # LR scheduler
     parser.add_argument('--use_lr_scheduler',
-                        default=False,
+                        default=True,
                         type=bool,
                         help='Whether to use learning rate scheduler')
     
@@ -169,7 +169,7 @@ def create_parser():
                         help='Number of warmup epochs for learning rate scheduler')
     
     parser.add_argument('--min_lr',
-                        default=1e-05,
+                        default=1e-06,
                         type=float,
                         help='Lower lr bound for cyclic schedulers')
     # Weight decay schedule
@@ -194,27 +194,27 @@ def create_parser():
                         help='Maximum norm for gradient clipping (None means no clipping)')
     # Preprocessing
     parser.add_argument('--use_preprocessing_params', 
-                        default=False, 
+                        default=True, 
                         type=bool,
                         help='Whether to use preprocessing parameters from parser or default values in preprocessing functions')
     
     parser.add_argument('--target_fs', 
-                        default=None, 
+                        default=200, 
                         type=int,
                         help='Target sampling rate for preprocessing')
     
     parser.add_argument('--l_freq', 
-                        default=None, 
+                        default=0.3, 
                         type=float,
                         help='Low-pass frequency for filtering')
     
     parser.add_argument('--h_freq', 
-                        default=None, 
+                        default=75.0, 
                         type=float,
                         help='High-pass frequency for filtering')
     
     parser.add_argument('--notch_freq', 
-                        default=None, 
+                        default=60.0, 
                         type=float,
                         help='Notch filter frequency to remove power line noise')
     
@@ -224,7 +224,7 @@ def create_parser():
                         help='Normalization method (e.g., "0.1mv")')
 
     parser.add_argument('--time_length', 
-                        default=None, 
+                        default=5.0, 
                         type=float,
                         help='Time length for preprocessing')
     
