@@ -8,7 +8,7 @@
 
 ## :speech_balloon: Annoucement
 - [2026.08.03] 🚩 **News:** Our NSR paper is now officially published and available online at [https://doi.org/10.1093/nsr/nwag466](https://doi.org/10.1093/nsr/nwag466).
-- [2026.07.20] 🎉 **Congratulations:** 🎉Our benchmark paper has been accepted by **National Science Review (NSR, IF=18.1)**!
+- [2026.07.20] 🎉 **Congratulations**🎉: Our benchmark paper has been accepted by **National Science Review (NSR, IF=18.1)**!
 - [2026.06.15] 🚩 **News:** The benchmark code is now publicly available at [https://github.com/Dingkun0817/EEG-FM-Benchmark](https://github.com/Dingkun0817/EEG-FM-Benchmark).
 - [2026.02.06] 🚩 **News:** The manuscript of our benchmark-v2 has been updated in [EEG Foundation Models: Progresses, Benchmarking, and Open Problems](https://arxiv.org/abs/2601.17883). We have added: (1) evaluation of BIOT-1D and BIOT-2D across all scenarios, and (2) experiments with varying fine-tuning data ratios for all models on more datasets.
 
