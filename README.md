@@ -308,9 +308,11 @@ For any questions, suggestions or collaborations, please feel free to reach out 
 If you find our repo useful for your research, please cite us:
 ```
 @article{liu2026eeg,
-  title={EEG Foundation Models: Progresses, Benchmarking, and Open Problems},
+  title={EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models},
   author={Liu, Dingkun and Chen, Yuheng and Chen, Zhu and Cui, Zhenyao and Wen, Yaozhi and An, Jiayu and Luo, Jingwei and Wu, Dongrui},
-  journal={arXiv preprint arXiv:2601.17883},
-  year={2026}
+  journal={National Science Review},
+  pages={nwag466},
+  year={2026},
+  publisher={Oxford University Press}
 }
 ```
