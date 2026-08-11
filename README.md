@@ -7,6 +7,7 @@
 
 
 ## :speech_balloon: Annoucement
+- [2026.08.04] 🚩 **News:** The manuscript of our benchmark-v3 has been updated in [EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models](https://arxiv.org/abs/2601.17883). 
 - [2026.08.03] 🚩 **News:** Our NSR paper is now officially published and available online at [https://doi.org/10.1093/nsr/nwag466](https://doi.org/10.1093/nsr/nwag466).
 - [2026.07.20] 🎉 **Congratulations**🎉: Our benchmark paper has been accepted by **National Science Review (NSR, IF=18.1)**!
 - [2026.06.15] 🚩 **News:** The benchmark code is now publicly available at [https://github.com/Dingkun0817/EEG-FM-Benchmark](https://github.com/Dingkun0817/EEG-FM-Benchmark).
