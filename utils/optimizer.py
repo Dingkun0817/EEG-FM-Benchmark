@@ -152,7 +152,7 @@ def create_optimizer(opt, lr, weight_decay, opt_eps=None, momentum=None, model=N
         parameters = get_parameter_groups(model, weight_decay, skip, get_num_layer, get_layer_scale, **kwargs)
         weight_decay = 0.
     else:
-        parameters = model.parameters()
+        parameters = (param for param in model.parameters() if param.requires_grad)
 
     opt_args = dict(lr=lr, weight_decay=weight_decay)
     if opt_eps is not None:

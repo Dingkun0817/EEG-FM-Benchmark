@@ -167,6 +167,8 @@ We encourage you to explore different hyperparameter settings rather than relyin
 
 See `python run_finetuning.py --help` for the full flag list. 
 
+For foundation models, `head_only` keeps the pretrained feature extractor and other frozen modules in evaluation mode during training. Only the task head and an optional `chan_conv` channel adapter are trainable. This protocol includes channel adaptation when a model has `chan_conv`; use `--dropout_rate 0` if a dropout-free linear classification head is required. TFMTokenizer performs discrete tokenization under `torch.no_grad()`, so its `chan_conv` is marked trainable but does not receive gradients through that tokenizer.
+
 ## 📥Datasets
 
 Data is read from `datasets/data/<DatasetName>.pkl`. If a pkl file is missing, the corresponding dataset module (e.g. `datasets/BNCI2014001/Preprocess_Dataset.py`) is used to download or generate it. Supported datasets include:
