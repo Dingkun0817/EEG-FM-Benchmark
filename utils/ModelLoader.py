@@ -28,6 +28,7 @@ class ModelLoader(nn.Module):
             self.img_feature_dim = eeg_dataset.img_feature.shape[1]
             self.task_type = 'matching'
         self.finetune_strategy = finetune_strategy
+        self._head_only_applied = False
         self.main_model = None
         self.task_head = nn.Identity()
         self.feature_dim = None
@@ -48,9 +49,19 @@ class ModelLoader(nn.Module):
             raise ValueError(f"Unsupported task_type: {task_type}. Use 'regression', 'classification', or 'matching'")
         return self
 
+    def train(self, mode=True):
+        """Keep frozen feature extractors in eval mode during head-only training."""
+        super().train(mode)
+        if mode and self._head_only_applied:
+            for name, module in self.named_children():
+                if name not in ('task_head', 'chan_conv'):
+                    module.eval()
+        return self
+
     def apply_finetune_strategy(self, strategy=None):
-        """Set parameter trainability by strategy: 'full' or 'head_only'. Returns self."""
+        """Train only the task head and optional channel adapter in head-only mode."""
         strategy = strategy or self.finetune_strategy
+        was_head_only = self._head_only_applied
         trainable_dtypes = {torch.float, torch.float16, torch.float32, torch.float64, torch.complex64, torch.complex128}
         
         def set_params_requires_grad(params, requires_grad):
@@ -60,15 +71,19 @@ class ModelLoader(nn.Module):
         
         if strategy == 'full' or strategy is None:
             set_params_requires_grad(self.parameters(), True)
+            self._head_only_applied = False
         elif strategy == 'head_only':
-            if self.main_model is not None:
-                set_params_requires_grad(self.main_model.parameters(), False)
+            set_params_requires_grad(self.parameters(), False)
             if self.task_head is not None:
                 set_params_requires_grad(self.task_head.parameters(), True)
             if hasattr(self, 'chan_conv'):
                 set_params_requires_grad(self.chan_conv.parameters(), True)
+            self._head_only_applied = True
         else:
             raise ValueError(f"Unsupported finetune strategy: {strategy}. Use 'full' or 'head_only'")
+        self.finetune_strategy = strategy
+        if self._head_only_applied or was_head_only:
+            self.train(self.training)
         return self
 
     def load_pretrained_weights(self, pretrained_path, strict=True):
