@@ -38,6 +38,16 @@ def build_model_import_kwargs(args):
 
 
 # --- CLI / task config ---
+def str2bool(value):
+    """Parse a true/false CLI value; plain ``type=bool`` treats the string 'False' as True."""
+    normalized = value.strip().lower()
+    if normalized in ('true', '1', 'yes'):
+        return True
+    if normalized in ('false', '0', 'no'):
+        return False
+    raise argparse.ArgumentTypeError(f"Expected a boolean value (True or False), got {value!r}")
+
+
 def create_parser():
     parser = argparse.ArgumentParser(description='Run fine-tuning for EEG models')
     # Basic config: dataset and model
@@ -118,7 +128,7 @@ def create_parser():
     
     parser.add_argument('--class_weights', 
                         default=False, 
-                        type=bool, 
+                        type=str2bool, 
                         help='Whether to automatically calculate class weights based on training data label distribution, default False means no weights')
     # Optimizer
     parser.add_argument('--optimizer_type',
@@ -150,7 +160,7 @@ def create_parser():
     
     parser.add_argument('--filter_bias_and_bn',
                         default=False,
-                        type=bool,
+                        type=str2bool,
                         help='Whether to filter bias and batch norm parameters from weight decay')
     
     parser.add_argument('--layer_decay',
@@ -160,7 +170,7 @@ def create_parser():
     # LR scheduler
     parser.add_argument('--use_lr_scheduler',
                         default=True,
-                        type=bool,
+                        type=str2bool,
                         help='Whether to use learning rate scheduler')
     
     parser.add_argument('--warmup_epochs',
@@ -175,7 +185,7 @@ def create_parser():
     # Weight decay schedule
     parser.add_argument('--use_weight_decay_schedule',
                         default=False,
-                        type=bool,
+                        type=str2bool,
                         help='Whether to use weight decay scheduling')
 
     parser.add_argument('--min_weight_decay',
@@ -185,7 +195,7 @@ def create_parser():
     # Gradient clipping
     parser.add_argument('--use_grad_clipping',
                         default=False,
-                        type=bool,
+                        type=str2bool,
                         help='Whether to use gradient clipping')
     
     parser.add_argument('--clip_grad_norm',
@@ -195,7 +205,7 @@ def create_parser():
     # Preprocessing
     parser.add_argument('--use_preprocessing_params', 
                         default=True, 
-                        type=bool,
+                        type=str2bool,
                         help='Whether to use preprocessing parameters from parser or default values in preprocessing functions')
     
     parser.add_argument('--target_fs', 
@@ -230,7 +240,7 @@ def create_parser():
     
     parser.add_argument('--apply_EA', 
                         default=False, 
-                        type=bool,
+                        type=str2bool,
                         help='Whether to apply EA (Event-related Augmentation) during preprocessing')
     
     return parser
